@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--自定义加载等待动画-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/util_shape_custom_dialog_background"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="10dp">
+    <!--加载动画-->
+    <ImageView
+        android:id="@+id/loading_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/util_loading_orange"
+        android:contentDescription="loading animation"
+        android:layout_centerHorizontal="true" />
+    <!--加载提示语-->
+    <TextView
+        android:id="@+id/loading_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+		android:layout_below="@+id/loading_image_view"
+		android:layout_centerHorizontal="true"
+		android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/util_black"
+        android:text="@string/util_loading" />
+</RelativeLayout>

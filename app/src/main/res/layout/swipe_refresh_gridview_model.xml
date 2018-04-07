@@ -1,0 +1,28 @@
+<com.aspsine.swipetoloadlayout.SwipeToLoadLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeToLoadLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    app:swipe_style="classic">
+
+    <include
+        android:id="@id/swipe_refresh_header"
+        layout="@layout/swipe_refresh_header" />
+
+    <com.hsbank.luxclub.mywidget.MyGridView
+        android:id="@id/swipe_target"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:clipToPadding="false"
+        android:numColumns="2"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:fadeScrollbars="true"
+        />
+
+    <include
+        android:id="@id/swipe_load_more_footer"
+        layout="@layout/swipe_refresh_footer" />
+</com.aspsine.swipetoloadlayout.SwipeToLoadLayout>

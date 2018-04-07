@@ -1,0 +1,50 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--常规字体规格-->
+    <dimen name="font_small_s">10sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_small_x">14sp</dimen>
+    <dimen name="font_small_xx">16sp</dimen>
+    <dimen name="font_small_xxx">18sp</dimen>
+    <dimen name="font_middle">20sp</dimen>
+    <dimen name="font_middle_x">22sp</dimen>
+    <dimen name="font_middle_xx">24sp</dimen>
+    <dimen name="font_middle_xxx">28sp</dimen>
+    <dimen name="font_big">30sp</dimen>
+    <dimen name="font_big_x">34sp</dimen>
+    <dimen name="font_big_xx">38sp</dimen>
+    <dimen name="font_bigger">40sp</dimen>
+    <dimen name="font_bigger_x">46sp</dimen>
+    <dimen name="font_biggest">50sp</dimen>
+
+    <!--自定义字体规格-->
+    <dimen name="font_middle_c">26sp</dimen>
+
+    <!--项目字体规格-->
+    <dimen name="font_title">22sp</dimen>
+
+    <!--项目dp尺寸-->
+    <dimen name="title_height">44dp</dimen>
+    <dimen name="layout_space">10dp</dimen>
+    <dimen name="space_setting_item">20dp</dimen>
+    <dimen name="space_ktv_list">10dp</dimen>
+    <dimen name="margin_ktv_detail">15dp</dimen>
+    <dimen name="height_ktv_detail">42dp</dimen>
+    <dimen name="space_ktv_detail">40dp</dimen>
+    <dimen name="btn_">1dp</dimen>
+    <dimen name="list_">1dp</dimen>
+    <dimen name="setting_">1dp</dimen>
+
+    <dimen name="layout_app_input_height">46dp</dimen>
+    <dimen name="layout_app_input_control_spacing">16dp</dimen>
+    <dimen name="layout_app_input_text_line_spacing">6dp</dimen>
+    <dimen name="layout_app_input_text_left_spacing">12dp</dimen>
+    <dimen name="layout_app_input_text_right_spacing">8dp</dimen>
+
+    <!--项目px尺寸-->
+    <dimen name="line_divider">1px</dimen>
+
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/activityBase"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/app_background"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_common"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/gesturepwd_setting_preview"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="3dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp" >
+
+                    <View
+                        android:id="@+id/gesturepwd_setting_preview_0"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/shape_circle_lock_pattern_set" />
+
+                    <View
+                        android:id="@+id/gesturepwd_setting_preview_1"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_circle_lock_pattern_set" />
+
+                    <View
+                        android:id="@+id/gesturepwd_setting_preview_2"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_circle_lock_pattern_set" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="10dp" >
+
+                    <View
+                        android:id="@+id/gesturepwd_setting_preview_3"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/shape_circle_lock_pattern_set" />
+
+                    <View
+                        android:id="@+id/gesturepwd_setting_preview_4"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_circle_lock_pattern_set" />
+
+                    <View
+                        android:id="@+id/gesturepwd_setting_preview_5"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_circle_lock_pattern_set" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="10dp" >
+
+                    <View
+                        android:id="@+id/gesturepwd_setting_preview_6"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/shape_circle_lock_pattern_set" />
+
+                    <View
+                        android:id="@+id/gesturepwd_setting_preview_7"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_circle_lock_pattern_set" />
+
+                    <View
+                        android:id="@+id/gesturepwd_setting_preview_8"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_circle_lock_pattern_set" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtGesture"
+                style="@style/font_small_xx_gray_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_space"
+                android:gravity="center_horizontal"
+                android:text="绘制解锁图案"/>
+
+            <com.hsbank.luxclub.mywidget.lock_view.LockPatternView
+                android:id="@+id/lockview"
+                android:layout_width="290dp"
+                android:layout_height="290dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/layout_space"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_space"
+            android:layout_marginRight="@dimen/layout_space"
+            android:layout_marginTop="@dimen/layout_space"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/util_lockpattern_continue_save"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

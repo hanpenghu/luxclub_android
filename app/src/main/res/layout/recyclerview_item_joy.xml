@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hsbank.luxclub.mywidget.RoundImageView
+        android:id="@+id/round_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img_cover_loading"
+        app:borderRadius="10dp"
+        app:type="round" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/img_pager_logo"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:contentDescription="@null"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--tools:src="@drawable/img_cover_title_ktv" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txt_pager_enter"-->
+        <!--style="@style/font_small_xxx_yellow_text"-->
+        <!--android:layout_width="240dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_gravity="center_horizontal|bottom"-->
+        <!--android:layout_marginBottom="30dp"-->
+        <!--android:background="@drawable/shape_rect_joy_pager"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/txt_subscribe" />-->
+</FrameLayout>

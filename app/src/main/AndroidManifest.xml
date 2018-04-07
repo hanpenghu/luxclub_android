@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hsbank.luxclub">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeNoTitle">
+
+        <!-- 自有渠道 渠道商编号 -->
+        <meta-data
+            android:name="APP_CHANNEL"
+            android:value="${APP_CHANNEL}" />
+
+        <!-- 服务启动监听 -->
+        <receiver android:name=".service.ServiceReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.media.RINGER_MODE_CHANGED" />
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".view.LaunchActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.GuideActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".view.main.MainActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".view.main.joy.JoyListActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_ktv"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".view.main.joy.ModelListActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".view.main.joy.JoyDetailActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_ktv"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".view.main.joy.ModelDetailActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".view.main.joy.ModelOrderActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".view.main.my.ModelOrderDetailActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".view.main.my.OrderEvaluateActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".view.main.joy.JoySubscribeActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_subscribe_detail"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".view.main.joy.AlbumActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_site_album"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".view.main.joy.RoomAlbumActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".view.main.joy.SiteSearchActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".view.main.my.BindCardActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_bind_card"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".view.main.MainActivity" />
+
+        <activity
+            android:name=".view.main.my.ChangePasswordActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".view.main.my.AboutActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_about_my"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.main.my.MyOrderActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_my_order"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.main.my.OrderDetailActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_order_detail"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.main.my.RechargeHistoryActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_recharge"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.main.my.RecordsHistoryActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_consumption"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.main.my.RecordsHistoryDetailActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_consumption_detail"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.main.my.SettingsActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_set"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.main.my.SetSecurityActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_safe"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.manager.lock_pattern.LockPatternSetActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_safe"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.manager.lock_pattern.LockPatternUnlockActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.main.my.UnbindCardActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_unbind_card"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".view.main.my.VerifyPasswordActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_unbind_card"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".view.manager.my.UpdatePasswordActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.manager.my.MMessageActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_personal_message"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.manager.my.MOpenCardActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".view.manager.my.MOpenCardListActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".view.manager.my.MOpenCardDetailActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".view.manager.LoginActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_manager_login"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".view.manager.ManagerMainActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.manager.order.MOrderDetailActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.manager.order.MModelOrderDetailActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.manager.order.MModelOrderCancelActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.manager.order.MOrderCancelActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.manager.order.ConsumeCredentialsActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label=""
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.main.my.CoinPurseActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.main.my.CoinPurseRecordsHistory"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_consumption"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.main.my.CoinPurseRechargeHistory"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.main.my.CoinPurseProfitActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_profit"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.manager.order.MemberInformationActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_member_info"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.main.my.MessageActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/txt_message_center"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.main.my.IntroduceActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.SetPasswordActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.main.WebActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.main.my.ResetPasswordActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.main.joy.DynamicDetailActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".view.main.joy.SubscribeFlowActivity" />
+        <activity android:name=".view.main.joy.SubscribeSuccessActivity" />
+        <activity android:name=".view.manager.order.ChooseServantActivity" />
+        <activity android:name=".view.servant.ServantOrderDetailActivity" />
+        <activity android:name=".view.manager.order.MemberDetailActivity" />
+        <activity android:name=".view.servant.ServantOrderCancelActivity" />
+        <activity
+            android:name=".view.servant.FinishServiceActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".view.servant.UploadSummaryActivity"
+                  android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".view.servant.ViewSummaryActivity" />
+    </application>
+
+</manifest>

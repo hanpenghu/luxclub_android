@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radiogp_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/title_background"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radiobtn_comfirm"
+                style="@style/font_small_white_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:padding="10dp"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/selector_img_order_m1"
+                android:textColor="@color/selector_yellow_white"
+                android:textSize="@dimen/font_small_xx"
+                android:text="@string/txt_waite_comfirm" />
+
+
+            <RadioButton
+                android:id="@+id/radiobtn_account"
+                style="@style/font_small_white_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:button="@null"
+                android:padding="10dp"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/selector_img_order_m2"
+                android:textColor="@color/selector_yellow_white"
+                android:textSize="@dimen/font_small_xx"
+                android:text="@string/txt_waite_account"/>
+
+
+            <RadioButton
+                android:id="@+id/radiobtn_completed"
+                style="@style/font_small_white_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:padding="10dp"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/selector_img_order_m3"
+                android:textColor="@color/selector_yellow_white"
+                android:textSize="@dimen/font_small_xx"
+                android:text="@string/txt_have_complete" />
+        </RadioGroup>
+
+    <include layout="@layout/view_divider_line_h"/>
+
+    <ViewAnimator
+        android:id="@+id/vam_list_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <include layout="@layout/swipe_refresh_listview_order" />
+
+        <include layout="@layout/include_no_data" />
+    </ViewAnimator>
+</LinearLayout>

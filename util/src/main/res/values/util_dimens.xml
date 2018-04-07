@@ -1,0 +1,10 @@
+<resources>
+    <!--自定义对话框_按钮_圆角角度-->
+    <dimen name="util_custom_dialog_button_corner_radius">5dp</dimen>
+    <!--标题栏的高度-->
+    <dimen name="util_title_bar_height">44dp</dimen>
+    <!--标题栏的最小高度-->
+    <dimen name="util_title_bar_min_height">44dp</dimen>
+    <!--默认组件边距、间距-->
+    <dimen name="util_default_margin">10dp</dimen>
+</resources>

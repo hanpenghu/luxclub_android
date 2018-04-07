@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 按钮标签 -->
+    <string name="util_bt_scan">查看</string>
+    <string name="util_bt_view">查看</string>
+    <string name="util_bt_back"> &lt; 返回</string>
+    <string name="util_bt_save">保存</string>
+    <string name="util_bt_update">更新</string>
+    <string name="util_bt_reset">重置</string>
+    <string name="util_bt_open_url">打开链接</string>
+    <string name="util_bt_ok">确定</string>
+    <string name="util_bt_cancel">取消</string>
+    <string name="util_bt_take_photo">拍照</string>
+    <string name="util_bt_select_image">从手机相册中选择</string>
+    <!--默认按钮高度-->
+    <dimen name="util_button_height_default">44dp</dimen>
+    <!--按钮样式：14sp、白色背景、黑色字体-->
+    <style name="util_button_white_default">
+        <item name="android:textSize">@dimen/util_font_size_default</item>
+        <item name="android:textColorHint">@color/util_text_hint</item>
+        <item name="android:textColor">@color/util_black</item>
+        <item name="android:background">@color/util_white</item>
+        <item name="android:layout_height">@dimen/util_button_height_default</item>
+    </style>
+</resources>

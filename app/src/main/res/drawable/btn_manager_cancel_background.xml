@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="@color/yellow_lux" android:drawable="@drawable/shape_btn_manager_cancel_down" android:state_enabled="true" android:state_pressed="true" />
+    <item android:color="@color/yellow_lux" android:drawable="@drawable/shape_btn_manager_cancel_down" android:state_enabled="true" android:state_pressed="false" />
+
+</selector>

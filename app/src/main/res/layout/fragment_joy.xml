@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lly_joy"
+    android:background="@color/app_background"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/app_background"
+            app:tabIndicatorColor="@color/yellow_lux"
+            app:tabIndicatorHeight="3dp"
+            app:tabGravity="center"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/yellow_lux"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+            app:tabTextColor="@color/gray_deep" />
+
+        <!--<CheckBox-->
+        <!--android:id="@+id/ckb_tab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="8dp"-->
+        <!--android:button="@drawable/selector_toggle_tab"/>-->
+    </LinearLayout>
+
+    <com.hsbank.luxclub.mywidget.recyclerview_pager.RecyclerViewPager
+        android:id="@+id/recyclerview_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        app:rvp_flingFactor="0.3"
+        app:rvp_singlePageFling="false"
+        app:rvp_triggerOffset="0.5" />
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+        android:id="@+id/change_item_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_view_item_height"
+        android:layout_marginTop="20dp"
+        android:focusable="true"
+        app:_title="@string/txt_change_password"
+        app:drawable="@drawable/icon_manager_password"
+        app:titleColor="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/layout_space"
+        android:background="@color/line_divider" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+            android:id="@+id/personal_item_message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_view_item_height"
+            app:_title="@string/txt_personal_message"
+            app:drawable="@drawable/icon_manager_personal"
+            app:titleColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/text_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="40dp"
+            android:drawablePadding="@dimen/layout_space"
+            android:gravity="center_vertical"
+            android:src="@drawable/shape_circle_point" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_divider" />
+
+
+    <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+        android:id="@+id/setting_recommend_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_view_item_height"
+        android:layout_marginTop="20dp"
+        app:_title="@string/txt_recommend_card"
+        app:drawable="@drawable/icon_open_card"
+        app:titleColor="@color/white"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_divider" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20dp"
+        android:background="@color/line_divider" />
+
+    <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+        android:id="@+id/set_item_about_my"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_view_item_height"
+        app:_title="@string/txt_about_my"
+        app:drawable="@drawable/icon_about"
+        app:titleColor="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_divider" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        style="@style/font_small_xx_gray_deep_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_space"
+        android:layout_marginRight="@dimen/layout_space"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/btn_exit"
+        android:text="@string/txt_exit" />
+
+</LinearLayout>

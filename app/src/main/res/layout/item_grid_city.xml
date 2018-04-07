@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txt_city"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:focusable="false"
+    android:clickable="false"
+    android:button="@null"
+    android:background="@drawable/selector_rect_stroke_cor4"
+    android:textSize="@dimen/font_small_xx"
+    android:textColor="@color/selector_yellow_white"
+    android:gravity="center"
+    tools:text="@string/txt_default">
+
+</RadioButton>
+

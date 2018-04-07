@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_right" />
+
+    <ScrollView
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/bg_gold_card"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/card_number"
+                    style="@style/font_small_xx_white_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="45dp"
+                    android:visibility="invisible"
+                    android:text="@string/txt_default" />
+
+                <RelativeLayout
+                    android:id="@+id/rly_bind_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/bg_binding">
+
+                    <TextView
+                        style="@style/font_small_xx_yellow_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/icon_card_plus"
+                        android:gravity="center"
+                        android:text="@string/txt_bind_card" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <include layout="@layout/view_divider_line_h" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/setting_item_background"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/txt_balance"
+                    style="@style/font_middle_xx_yellow_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/txt_default" />
+
+                <TextView
+                    android:id="@+id/balance"
+                    style="@style/font_small_x_gray_deep_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="30dp"
+                    tools:text="@string/txt_balance" />
+
+                <ImageView
+                    android:id="@+id/img_recharge_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:src="@drawable/icon_my_preferential"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+
+            <include layout="@layout/view_divider_line_h" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/space_setting_item"
+                android:background="@color/line_divider" />
+
+            <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+                android:id="@+id/setitem_housekeeper"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_view_item_height"
+                app:_title="我的管家"
+                app:drawable="@drawable/icon_waiter"
+                app:titleColor="@color/white" />
+
+            <include layout="@layout/view_divider_line_h" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/space_setting_item"
+                android:background="@color/line_divider" />
+            <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+                android:id="@+id/setitem_consumption"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_view_item_height"
+                app:_title="@string/txt_consumption"
+                app:drawable="@drawable/icon_setting_consumption"
+                app:titleColor="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_divider" />
+
+            <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+                android:id="@+id/setitem_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_view_item_height"
+                app:_title="@string/txt_recharge"
+                app:drawable="@drawable/icon_setting_recharge"
+                app:titleColor="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_divider" />
+
+            <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+                android:id="@+id/setitem_coin_purse"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_view_item_height"
+                app:_title="@string/txt_coin_purse"
+                app:drawable="@drawable/icon_coin_purse"
+                app:titleColor="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_divider" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/space_setting_item"
+                android:background="@color/line_divider" />
+            <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+                android:id="@+id/setitem_setting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_view_item_height"
+                app:_title="安全设置"
+                app:drawable="@drawable/icon_setting_setting"
+                app:titleColor="@color/white" />
+
+            <include layout="@layout/view_divider_line_h" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/space_setting_item"
+                android:background="@color/line_divider" />
+            <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+                android:id="@+id/setitem_about_us"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_view_item_height"
+                app:_title="@string/txt_about_my"
+                app:drawable="@drawable/icon_about"
+                app:titleColor="@color/white" />
+
+            <include layout="@layout/view_divider_line_h" />
+
+            <Button
+                android:id="@+id/btn_exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/selector_rect_corner_yellow_trans"
+                style="@style/font_small_xx_black_text"
+                android:text="@string/txt_logout" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

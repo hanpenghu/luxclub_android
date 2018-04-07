@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_background">
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/app_background">
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rgroup_tab_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/tab_bottom_background"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtn_joy"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/selector_btn_tab_joy"
+            android:text="@string/txt_joy" />
+        <RadioButton
+            android:id="@+id/rbtn_order"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/selector_btn_tab_order"
+            android:text="@string/txt_order" />
+        <RadioButton
+            android:id="@+id/rbtn_dynamic"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/selector_btn_tab_dynamic"
+            android:text="@string/txt_selected" />
+        <RadioButton
+            android:id="@+id/rbtn_my"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/selector_btn_tab_my"
+            android:text="@string/txt_my" />
+    </RadioGroup>
+</LinearLayout>

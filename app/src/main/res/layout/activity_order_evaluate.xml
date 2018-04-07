@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/setting_item_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lly_store_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/setting_item_background"
+            android:orientation="horizontal"
+            android:padding="@dimen/layout_space">
+
+            <TextView
+                style="@style/font_small_xx_white_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_order_store_name" />
+
+            <TextView
+                android:id="@+id/txt_site_name"
+                style="@style/font_small_xx_gray_deep_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_space"
+                android:layout_marginRight="@dimen/layout_space"
+                android:drawableRight="@drawable/setting_view_arrow"
+                tools:text="@string/txt_default" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/layout_space"
+            android:background="@color/line_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/layout_space">
+
+            <TextView
+                style="@style/font_small_xx_white_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_order_number" />
+
+            <TextView
+                android:id="@+id/txt_order_code"
+                style="@style/font_small_xx_gray_deep_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_space"
+                tools:text="@string/txt_default" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/layout_space"
+            android:background="@color/line_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/layout_space">
+
+            <TextView
+                style="@style/font_small_xx_white_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务人员" />
+
+            <TextView
+                android:id="@+id/txt_serve_name"
+                style="@style/font_small_xx_gray_deep_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_space"
+                tools:text="@string/txt_default" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/layout_space"
+            android:background="@color/line_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/layout_space">
+
+            <TextView
+                style="@style/font_small_xx_white_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_order_store_location" />
+
+            <TextView
+                android:id="@+id/txt_site_addr"
+                style="@style/font_small_xx_gray_deep_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_space"
+                tools:text="@string/txt_default" />
+        </LinearLayout>
+
+        <include layout="@layout/view_divider_line_h" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/setting_item_background"
+        style="@style/font_small_xx_white_text"
+        android:text="店家评价" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#272B37"
+        android:padding="10dp">
+        <RatingBar
+            android:id="@+id/ratbar_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:numStars="5"
+            android:stepSize="0.5"
+            tools:rating="2" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/setting_item_background"
+        style="@style/font_small_xx_white_text"
+        android:text="@string/txt_evaluate_waiter" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#272B37"
+        android:padding="10dp">
+
+        <RatingBar
+            android:id="@+id/ratbar_waiter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:numStars="5"
+            android:stepSize="1"
+            tools:rating="1" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        style="@style/font_small_xx_white_text"
+        android:text="我的留言" />
+
+    <EditText
+        android:id="@+id/edt_leave_msg"
+        style="@style/font_small_xx_gray_deep_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/layout_space"
+        android:layout_marginTop="@dimen/layout_space"
+        android:padding="5dp"
+        android:background="#272B37"
+        android:gravity="top"
+        android:lines="3"
+        android:maxLength="100"
+        tools:text="留言内容留言内容留言内容留言内容留言内容留言内容留言内容"
+        android:inputType="textMultiLine" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/txt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/yellow_lux"
+        android:gravity="center"
+        android:text="@string/txt_submit_evaluate"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_small_xx" />
+</LinearLayout>

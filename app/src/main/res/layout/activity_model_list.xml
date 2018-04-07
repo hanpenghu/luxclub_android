@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lly_activity_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_common"/>
+
+        <ViewAnimator
+            android:id="@+id/vam_joy_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <include layout="@layout/swipe_refresh_gridview_model" />
+
+            <LinearLayout
+                android:id="@+id/lly_list_null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/img_logo_gray_square"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/font_small_xx_gray_deep_text"
+                    android:text="@string/txt_tip_no_merchant"/>
+            </LinearLayout>
+        </ViewAnimator>
+
+        <FrameLayout
+            android:id="@+id/fly_appoiment"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/yellow_lux">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                style="@style/font_small_x_black_text"
+                android:text="@string/txt_connect_service"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--常规颜色-->
+    <color name="red">#FFEA3836</color>
+    <color name="red_transparent">#66EA3836</color>
+    <color name="pink">#FFF1798F</color>
+    <color name="blue">#FF65C0E7</color>
+    <color name="blue_top">#FF181D2F</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_transparent">#00FFFFFF</color>
+    <color name="yellow">#FFD5AB17</color>
+    <color name="yellow_transparent">#66D5AB17</color>
+    <color name="black">#FF333333</color>
+    <color name="black_transparent">#66333333</color>
+    <color name="gray">#FF999999</color>
+    <color name="gray_transparent">#66999999</color>
+    <color name="gray_deep">#FF74798A</color>
+    <color name="gray_deep_x">#FF505666</color>
+    <color name="gray_white_less">#FFC3C3C3</color>
+    <color name="wave_below">#FFEBC43C</color>
+    <color name="wave_above">#FFD5AB17</color>
+    <color name="gray_white">#FF999999</color>
+    <color name="gray_light">#CCCCCC</color>
+
+    <!-- toolbar主题色 -->
+    <color name="colorPrimary">@color/title_background</color>
+    <color name="colorPrimaryDark">@color/title_background</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--luxclub-->
+    <color name="yellow_lux">#ffb900</color>
+    <!--功能颜色-->
+    <!--APP背景-->
+    <color name="app_background">#FF151924</color>
+    <!--title背景-->
+    <color name="title_background">#FF1D212D</color>
+    <!--bottom tab背景-->
+    <color name="tab_bottom_background">#FF1D212D</color>
+    <!--title文字-->
+    <color name="title_text">@color/white</color>
+    <!--分割线-->
+    <color name="line_divider">#2E3140</color>
+    <!--文字提示-->
+    <color name="text_hint">#FFC3C3C3</color>
+    <!--recyclerview_indicator 选中-->
+    <color name="indicator_home_selected">@color/yellow</color>
+    <!--recyclerview_indicator 未选中-->
+    <color name="indicator_home_normal">#FF1D212D</color>
+
+    <!--setting item view 背景-->
+    <color name="setting_item_background">#FF1D212D</color>
+    <color name="setting_item_background_press">#FF565B6C</color>
+
+    <color name="gesture_background">#ff303237</color>
+    <color name="color_hei_8">#00000000</color>
+
+    <drawable name="trans">@color/color_hei_8</drawable>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+            android:id="@+id/set_item_safe"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_view_item_height"
+            android:layout_marginTop="20dp"
+            android:focusable="true"
+            app:_title="@string/txt_safe"
+            app:drawable="@drawable/icon_safe"
+            app:titleColor="@color/white" />
+
+        <TextView
+            android:id="@+id/text_set_safe"
+            style="@style/font_small_xx_gray_deep_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/icon_lock_red"
+            android:drawablePadding="@dimen/layout_space"
+            android:gravity="center_vertical"
+            android:text="@string/txt_set_no" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/layout_space"
+        android:background="@color/line_divider" />
+
+    <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+        android:id="@+id/set_item_modify_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_view_item_height"
+        app:_title="@string/txt_modify_password"
+        app:drawable="@drawable/icon_password"
+        app:titleColor="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_divider" />
+</LinearLayout>

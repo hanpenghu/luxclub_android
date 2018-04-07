@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/setting_item_background"
+        android:layout_marginTop="14dp"
+        android:padding="14dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/font_small_xx_white_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务总结" />
+
+        <TextView
+            android:id="@+id/txt_service_summary"
+            style="@style/font_small_x_white_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="8dp"
+            android:textSize="@dimen/font_small_xx"
+            android:gravity="start" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/setting_item_background"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:padding="14dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/font_small_xx_white_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片" />
+
+        <com.hsbank.luxclub.mywidget.MyGridView
+            android:id="@+id/gridview_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_space"
+            android:horizontalSpacing="5dp"
+            android:verticalSpacing="5dp"
+            android:numColumns="4" />
+    </LinearLayout>
+
+
+</LinearLayout>

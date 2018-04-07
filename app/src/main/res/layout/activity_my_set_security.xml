@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20dp"
+        android:background="@color/line_divider" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:background="@color/setting_item_background">
+
+        <com.hsbank.luxclub.mywidget.setting_item.item.SwitchView
+            android:id="@+id/set_item_safe"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:focusable="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/layout_space"
+            android:paddingRight="@dimen/layout_space"/>
+
+        <TextView
+            style="@style/font_small_xx_white_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/layout_space"
+            android:text="@string/txt_gesture_password" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/layout_space"
+        android:background="@color/line_divider" />
+
+    <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+        android:id="@+id/set_item_update_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_view_item_height"
+        app:_title="@string/txt_update_gesture"
+        app:titleColor="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_divider" />
+
+</LinearLayout>

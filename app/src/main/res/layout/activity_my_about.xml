@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/img_logo_gold"/>
+
+    <TextView
+        android:id="@+id/txt_app_version"
+        style="@style/font_small_xx_yellow_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        tools:text="0.0.0"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="35dp"
+        android:background="@color/line_divider" />
+
+    <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+        android:id="@+id/setitem_call_customer"
+        app:_title="@string/txt_call_customer"
+        app:titleColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_view_item_height" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/layout_space"
+        android:background="@color/line_divider" />
+
+    <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+        android:id="@+id/setitem_company"
+        app:_title="@string/txt_company"
+        app:titleColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_view_item_height" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/layout_space"
+        android:visibility="gone"
+        android:background="@color/line_divider" />
+
+    <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+        android:id="@+id/setitem_service_agreement"
+        app:_title="@string/txt_service_agreement"
+        app:titleColor="@color/white"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_view_item_height" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_divider" />
+
+</LinearLayout>

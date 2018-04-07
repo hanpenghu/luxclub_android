@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!-- pull_to_refresh：上拉刷新下拉加载 头部视图 -->
+<com.hsbank.luxclub.mywidget.swipe_refresh_loadmore.MyRefreshHeaderView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:contentDescription="@string/util_image_view"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/icon_lionhead_gesture" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/util_pull_to_refresh_header_pull_label"
+            android:textColor="@color/gray_deep_x"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/view_divider_line_h"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"/>
+</com.hsbank.luxclub.mywidget.swipe_refresh_loadmore.MyRefreshHeaderView>

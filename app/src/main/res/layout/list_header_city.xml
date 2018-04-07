@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/font_small_xx_gray_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_ktv_detail"
+        android:background="@color/app_background"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_ktv_detail"
+        android:text="@string/txt__city_location" />
+
+    <TextView
+        android:id="@+id/txt_city_location"
+        style="@style/font_small_xx_yellow_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_ktv_detail"
+        android:background="@color/setting_item_background"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_ktv_detail"
+        tools:text="@string/txt_default" />
+
+    <TextView
+        style="@style/font_small_xx_gray_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_ktv_detail"
+        android:background="@color/app_background"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_ktv_detail"
+        android:text="@string/txt_hot_city" />
+
+    <com.hsbank.luxclub.mywidget.MeansureGridView
+        android:id="@+id/grid_city_hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/setting_item_background"
+        android:columnWidth="30dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:verticalSpacing="10dp" />
+</LinearLayout>

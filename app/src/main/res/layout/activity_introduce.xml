@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentView"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/img_logo_gold"
+        tools:ignore="ContentDescription" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:paddingLeft="20dp"
+       android:paddingRight="20dp"
+       android:layout_marginTop="20dp"
+       android:lineSpacingMultiplier="1.2"
+       android:text="吉祥荟是为中国顶级富豪成立的会员制俱乐部，来自各行业的尖端人士汇聚吉祥荟。吉祥荟为会员提供安全私密的专属活动空间，并为会员在商业拓展机遇方面建立高端人际关系交流平台。
+       \n\n「至尚至尊，吉祥荟」是成立吉祥荟会员制俱乐部的初衷。吉祥荟为「身份尊贵」的尖端人士提供「至高无上 」的顶级服务，为此，吉祥荟应运而生。
+       \n\n根据不同充值金额，享受不同折扣。“一卡在手，通通可有”是吉祥荟成立的最基本概念，让吉祥荟的会员不会再为安排“吃、住、行、乐”而苦恼；为预约和选择而浪费时间。我们用极致的用户体验和人性化设计为您的生活带来更多的便捷。"
+       tools:ignore="HardcodedText" />
+
+</LinearLayout>

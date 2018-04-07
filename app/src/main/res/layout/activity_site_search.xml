@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+        <ImageButton
+            android:id="@+id/imgbt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_arrow_title"/>
+
+        <com.hsbank.luxclub.mywidget.CustomEditText
+            android:id="@+id/edt_site"
+            style="@style/font_small_x_gray_deep_text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@color/setting_item_background"
+            android:drawableLeft="@drawable/icon_search_gray"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/icon_delete_gray"
+            android:freezesText="true"
+            android:gravity="center"
+            android:hint="@string/txt_tip_search_store"
+            android:imeOptions="actionSearch"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lly_site_hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/font_small_xx_gray_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_ktv_detail"
+            android:background="@color/app_background"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_ktv_detail"
+            android:text="@string/txt_hot_search"/>
+
+        <GridView
+            android:id="@+id/grid_site_hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/setting_item_background"
+            android:columnWidth="30dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:verticalSpacing="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lly_site_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_divider"/>
+
+        <ListView
+            android:id="@+id/list_site_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/line_divider"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_divider"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title" />
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/shape_rect_cor4_yellow_trans" android:state_enabled="true" android:state_pressed="true" />
+    <item android:drawable="@drawable/shape_rect_cor4_yellow" android:state_enabled="true" android:state_pressed="false" />
+    <item android:drawable="@drawable/shape_rect_cor4_yellow_trans" android:state_enabled="false" />
+</selector>

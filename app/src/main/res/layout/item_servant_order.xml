@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/setting_item_background">
+
+    <include layout="@layout/view_divider_line_h" />
+
+    <FrameLayout
+        android:id="@+id/rll"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/txt_site_name"
+            style="@style/font_small_xx_white_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="@dimen/layout_space"
+            android:drawableRight="@drawable/setting_view_arrow"
+            android:text="@string/util_default" />
+
+        <TextView
+            android:id="@+id/txt_order_state"
+            style="@style/font_small_xx_yellow_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:text="@string/util_default" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/layout_space"
+        android:background="@color/line_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_site"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/layout_space"
+            android:layout_marginLeft="@dimen/layout_space"
+            android:layout_marginTop="@dimen/layout_space"
+            android:scaleType="center"
+            tools:ignore="ContentDescription" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/font_small_xx_gray_deep_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="会员姓名：" />
+
+                    <TextView
+                        android:id="@+id/txt_member_name"
+                        style="@style/font_small_xx_white_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/txt_default" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp">
+
+                    <TextView
+                        style="@style/font_small_xx_gray_deep_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="性        别：" />
+
+                    <TextView
+                        android:id="@+id/txt_member_sex"
+                        style="@style/font_small_xx_white_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        tools:text="@string/txt_default" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp">
+
+                    <TextView
+                        style="@style/font_small_xx_gray_deep_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="预约时间：" />
+
+                    <TextView
+                        android:id="@+id/txt_reserve_date"
+                        style="@style/font_small_xx_white_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        tools:text="@string/txt_default" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_is_summary"
+                style="@style/font_small_yellow_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:text="已上传服务总结" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view_divider_line_h" />
+</LinearLayout>

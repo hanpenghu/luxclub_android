@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_dynamic"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/test_img_zoom" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp">
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:textColor="@color/yellow_lux"
+                    android:textSize="@dimen/font_small_xx"
+                    tools:text="@string/txt_default" />
+
+                <ImageView
+                    android:id="@+id/img_icon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/txt_title"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/icon_tab_lionhead_gold"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/txt_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/img_icon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_icon"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_small_x"
+                    tools:text="@string/txt_default" />
+
+                <TextView
+                    android:id="@+id/txt_create_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/img_icon"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_small_x"
+                    tools:ignore="RelativeOverlap"
+                    tools:text="@string/txt_default" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/fly_web_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

@@ -1,0 +1,43 @@
+<!--
+pull_to_refresh：上拉刷新下拉加载
+底部视图
+2016-01-15
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_to_refresh_header"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@color/util_transparent"
+    android:gravity="center">
+
+    <ProgressBar
+        android:id="@+id/pull_to_load_progress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/pull_to_load_image"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:contentDescription="@string/util_image_view"
+        android:src="@drawable/util_pulltorefresh_arrow_up"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/pull_to_load_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/util_pull_to_refresh_footer_pull_label"
+        android:textColor="@color/util_black"
+        android:textSize="12sp" />
+</RelativeLayout>

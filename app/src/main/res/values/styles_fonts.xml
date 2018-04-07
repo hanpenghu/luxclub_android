@@ -1,0 +1,459 @@
+<resources>
+
+    <!-- small ****************************************************-->
+    <style name="font_small_red_text">
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_small_yellow_text">
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/yellow_lux</item>
+    </style>
+
+    <style name="font_small_white_text">
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="font_small_gray_text">
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="font_small_black_text">
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+
+    <!-- small_x ****************************************************-->
+    <style name="font_small_x_red_text">
+        <item name="android:textSize">@dimen/font_small_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_small_x_yellow_text">
+        <item name="android:textSize">@dimen/font_small_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/yellow_lux</item>
+    </style>
+
+    <style name="font_small_x_white_text">
+        <item name="android:textSize">@dimen/font_small_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="font_small_x_gray_text">
+        <item name="android:textSize">@dimen/font_small_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="font_small_x_black_text">
+        <item name="android:textSize">@dimen/font_small_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- small_xx ****************************************************-->
+    <style name="font_small_xx_red_text">
+        <item name="android:textSize">@dimen/font_small_xx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_small_xx_yellow_text">
+        <item name="android:textSize">@dimen/font_small_xx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/yellow_lux</item>
+    </style>
+
+    <style name="font_small_xx_white_text">
+        <item name="android:textSize">@dimen/font_small_xx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="font_small_xx_gray_text">
+        <item name="android:textSize">@dimen/font_small_xx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="font_small_xx_black_text">
+        <item name="android:textSize">@dimen/font_small_xx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- small_xxx ****************************************************-->
+    <style name="font_small_xxx_red_text">
+        <item name="android:textSize">@dimen/font_small_xxx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_small_xxx_yellow_text">
+        <item name="android:textSize">@dimen/font_small_xxx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/yellow_lux</item>
+    </style>
+
+    <style name="font_small_xxx_white_text">
+        <item name="android:textSize">@dimen/font_small_xxx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="font_small_xxx_gray_text">
+        <item name="android:textSize">@dimen/font_small_xxx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="font_small_xx_gray_deep_text">
+        <item name="android:textSize">@dimen/font_small_xx</item>
+        <item name="android:textColorHint">@color/gray_deep_x</item>
+        <item name="android:textColor">@color/gray_deep_x</item>
+    </style>
+    <style name="font_small_xx_white_deep_text">
+        <item name="android:textSize">@dimen/font_small_xx</item>
+        <item name="android:textColorHint">@color/gray_deep_x</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="font_small_x_gray_deep_text">
+        <item name="android:textSize">@dimen/font_small_x</item>
+        <item name="android:textColorHint">@color/gray_deep_x</item>
+        <item name="android:textColor">@color/gray_deep_x</item>
+    </style>
+
+    <style name="font_small_xxx_black_text">
+        <item name="android:textSize">@dimen/font_small_xxx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- middle ****************************************************-->
+    <style name="font_middle_red_text">
+        <item name="android:textSize">@dimen/font_middle</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_middle_yellow_text">
+        <item name="android:textSize">@dimen/font_middle</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/yellow_lux</item>
+    </style>
+
+    <style name="font_middle_white_text">
+        <item name="android:textSize">@dimen/font_middle</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="font_middle_gray_text">
+        <item name="android:textSize">@dimen/font_middle</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="font_middle_black_text">
+        <item name="android:textSize">@dimen/font_middle</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- middle_x ****************************************************-->
+    <style name="font_middle_x_red_text">
+        <item name="android:textSize">@dimen/font_middle_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_middle_x_yellow_text">
+        <item name="android:textSize">@dimen/font_middle_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/yellow_lux</item>
+    </style>
+
+    <style name="font_middle_x_white_text">
+        <item name="android:textSize">@dimen/font_middle_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="font_middle_x_gray_text">
+        <item name="android:textSize">@dimen/font_middle_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="font_middle_x_black_text">
+        <item name="android:textSize">@dimen/font_middle_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- middle_xx ****************************************************-->
+    <style name="font_middle_xx_red_text">
+        <item name="android:textSize">@dimen/font_middle_xx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_middle_xx_yellow_text">
+        <item name="android:textSize">@dimen/font_middle_xx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/yellow_lux</item>
+    </style>
+
+    <style name="font_middle_xx_white_text">
+        <item name="android:textSize">@dimen/font_middle_xx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="font_middle_xx_gray_text">
+        <item name="android:textSize">@dimen/font_middle_xx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="font_middle_xx_black_text">
+        <item name="android:textSize">@dimen/font_middle_xx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- middle_xxx ****************************************************-->
+    <style name="font_middle_xxx_red_text">
+        <item name="android:textSize">@dimen/font_middle_xxx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_middle_xxx_yellow_text">
+        <item name="android:textSize">@dimen/font_middle_xxx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/yellow_lux</item>
+    </style>
+
+    <style name="font_middle_xxx_white_text">
+        <item name="android:textSize">@dimen/font_middle_xxx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="font_middle_xxx_gray_text">
+        <item name="android:textSize">@dimen/font_middle_xxx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="font_middle_xxx_black_text">
+        <item name="android:textSize">@dimen/font_middle_xxx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- big ****************************************************-->
+    <style name="font_big_red_text">
+        <item name="android:textSize">@dimen/font_big</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_big_yellow_text">
+        <item name="android:textSize">@dimen/font_big</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/yellow_lux</item>
+    </style>
+
+    <style name="font_big_white_text">
+        <item name="android:textSize">@dimen/font_big</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="font_big_gray_text">
+        <item name="android:textSize">@dimen/font_big</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="font_big_black_text">
+        <item name="android:textSize">@dimen/font_big</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- big_x ****************************************************-->
+    <style name="font_big_x_red_text">
+        <item name="android:textSize">@dimen/font_big_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_big_x_yellow_text">
+        <item name="android:textSize">@dimen/font_big_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/yellow_lux</item>
+    </style>
+
+    <style name="font_big_x_white_text">
+        <item name="android:textSize">@dimen/font_big_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="font_big_x_gray_text">
+        <item name="android:textSize">@dimen/font_big_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="font_big_x_black_text">
+        <item name="android:textSize">@dimen/font_big_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- big_xx ****************************************************-->
+    <style name="font_big_xx_red_text">
+        <item name="android:textSize">@dimen/font_big_xx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_big_xx_yellow_text">
+        <item name="android:textSize">@dimen/font_big_xx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/yellow_lux</item>
+    </style>
+
+    <style name="font_big_xx_white_text">
+        <item name="android:textSize">@dimen/font_big_xx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="font_big_xx_gray_text">
+        <item name="android:textSize">@dimen/font_big_xx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="font_big_xx_black_text">
+        <item name="android:textSize">@dimen/font_big_xx</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- bigger ****************************************************-->
+    <style name="font_bigger_red_text">
+        <item name="android:textSize">@dimen/font_bigger</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_bigger_yellow_text">
+        <item name="android:textSize">@dimen/font_bigger</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/yellow_lux</item>
+    </style>
+
+    <style name="font_bigger_white_text">
+        <item name="android:textSize">@dimen/font_bigger</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="font_bigger_gray_text">
+        <item name="android:textSize">@dimen/font_bigger</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="font_bigger_black_text">
+        <item name="android:textSize">@dimen/font_bigger</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- bigger_x ****************************************************-->
+    <style name="font_bigger_x_red_text">
+        <item name="android:textSize">@dimen/font_bigger_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_bigger_x_yellow_text">
+        <item name="android:textSize">@dimen/font_bigger_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/yellow_lux</item>
+    </style>
+
+    <style name="font_bigger_x_white_text">
+        <item name="android:textSize">@dimen/font_bigger_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="font_bigger_x_gray_text">
+        <item name="android:textSize">@dimen/font_bigger_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="font_bigger_x_black_text">
+        <item name="android:textSize">@dimen/font_bigger_x</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- biggest ****************************************************-->
+    <style name="font_biggest_red_text">
+        <item name="android:textSize">@dimen/font_biggest</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="font_biggest_yellow_text">
+        <item name="android:textSize">@dimen/font_biggest</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/yellow_lux</item>
+    </style>
+
+    <style name="font_biggest_white_text">
+        <item name="android:textSize">@dimen/font_biggest</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="font_biggest_gray_text">
+        <item name="android:textSize">@dimen/font_biggest</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="font_biggest_black_text">
+        <item name="android:textSize">@dimen/font_biggest</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+
+
+</resources>

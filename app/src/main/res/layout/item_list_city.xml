@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_city_catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dip"
+        android:paddingLeft="15dip"
+        style="@style/font_small_xx_gray_text"
+        android:paddingTop="5dip" />
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/line_divider"/>
+
+    <FrameLayout
+        android:id="@+id/city_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/setting_item_background"
+        android:paddingBottom="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/txt_city_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            style="@style/font_small_xx_white_text"
+            android:singleLine="true"/>
+    </FrameLayout>
+</LinearLayout>

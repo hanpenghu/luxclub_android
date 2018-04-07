@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 新增按钮：黑色背景 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout
+        android:background="#000000"
+    	android:id="@+id/sale_record_add_bt_add_black"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        tools:ignore="UselessParent" >
+        <ImageView
+            android:id="@+id/util_bt_add_black_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/util_selector_bt_add"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+</RelativeLayout>

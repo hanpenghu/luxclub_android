@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fly_toolbar"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:layout_width="match_parent"
+    android:background="@color/title_background"
+    android:layout_height="wrap_content">
+
+    <!--只有当前类继承AppcompatActivity时候才可使用。
+    一般toolbar的使用有两种方式，第一种是直接继承AppcompatActivity，主题采用默认主题即可
+    第二种用法是把toolbar当做一个viewgroup来使用，创建xml布局文件，
+    以include的方式引入进去，本项目采用第二种用法，灵活性更强；-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:minHeight="@dimen/title_height"
+        android:background="@color/title_background"
+        android:elevation="4dp"
+        android:theme="@style/MyToolbarTheme"
+        app:popupTheme="@style/MyToolbarPopupTheme"
+        app:navigationIcon="@drawable/icon_arrow_title">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_middle"
+            tools:text="@string/txt_default"/>
+    </android.support.v7.widget.Toolbar>
+
+</FrameLayout>

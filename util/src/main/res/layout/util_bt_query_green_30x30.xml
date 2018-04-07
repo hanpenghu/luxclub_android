@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 查询按扭：绿色 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="30dp"
+    android:layout_height="30dp" >
+    <RelativeLayout
+    	android:id="@+id/util_bt_query"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/util_selector_bt_radius_10_green"
+        tools:ignore="UselessParent" >
+        <ImageView
+            android:id="@+id/util_bt_query_icon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/util_bt_query"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+</RelativeLayout>

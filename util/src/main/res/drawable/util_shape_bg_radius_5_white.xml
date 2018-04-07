@@ -1,0 +1,16 @@
+<!--白色圆角背景图案-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="90"
+        android:endColor="@color/util_white"
+        android:startColor="@color/util_white" />
+    <stroke
+        android:width="1px"
+        android:color="@color/util_white"></stroke>
+    <corners
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp" />
+</shape>

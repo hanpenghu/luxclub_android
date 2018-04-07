@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/setting_item_background"
+        android:layout_marginTop="14dp"
+        android:padding="14dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/font_small_xx_white_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务总结" />
+
+        <EditText
+            android:id="@+id/edt_service_summary"
+            style="@style/font_small_x_gray_deep_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#252b37"
+            android:layout_marginTop="12dp"
+            android:padding="8dp"
+            android:textSize="@dimen/font_small_xx"
+            android:textColor="@color/white"
+            android:inputType="textMultiLine"
+            android:hint="请在此输入服务总结"
+            android:gravity="start"
+            android:maxLines="20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/setting_item_background"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:padding="14dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/font_small_xx_white_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传图片" />
+
+        <com.hsbank.luxclub.mywidget.MyGridView
+            android:id="@+id/gridview_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_space"
+            android:horizontalSpacing="5dp"
+            android:verticalSpacing="5dp"
+            android:numColumns="4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lly_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_btn_manager_cancel_down"
+            android:text="以后填写"
+            android:textSize="@dimen/font_small_xxx"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_btn_manager_confirm_down"
+            android:text="完成"
+            android:textSize="@dimen/font_small_xxx"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>

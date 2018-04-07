@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/setting_item_background">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_background"/>
+     <ImageView
+         android:id="@+id/imageView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/view1"
+         android:src="@drawable/shape_circle_point"
+         android:layout_marginTop="17dp"
+         android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/txtTitle"
+        style="@style/font_small_xx_white_deep_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/txt_personal_new_message"/>
+
+    <TextView
+        android:id="@+id/txt_create_date"
+        style="@style/font_small_x_gray_deep_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/layout_space"
+        android:layout_marginTop="10dp"
+        android:text="@string/txt_default" />
+
+    <TextView
+        android:id="@+id/txt_order_code"
+        style="@style/font_small_x_gray_deep_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:lineSpacingMultiplier="1.2"
+        android:singleLine="true"
+        android:layout_marginBottom="@dimen/layout_space"
+        android:layout_marginLeft="@dimen/layout_space"
+        android:layout_marginTop="15dp"
+        android:text="@string/txt_default" />
+
+</RelativeLayout>
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+<resources>
+    <!--定义常用字体大小-->
+    <dimen name="util_font_size_small_xx">8sp</dimen>
+    <dimen name="util_font_size_small_x">10sp</dimen>
+    <dimen name="util_font_size_small">12sp</dimen>
+    <dimen name="util_font_size_default">14sp</dimen>
+    <dimen name="util_font_size_large">16sp</dimen>
+    <dimen name="util_font_size_large_x">18sp</dimen>
+    <dimen name="util_font_size_large_xx">20sp</dimen>
+    <!--默认字体样式：14sp、黑色-->
+    <style name="util_font_default">
+        <item name="android:textSize">@dimen/util_font_size_default</item>
+        <item name="android:textColorHint">@color/util_text_hint</item>
+        <item name="android:textColor">@color/util_black</item>
+    </style>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+基于V7包中的ToolBar实现的标题栏
+只有当前类继承AppcompatActivity时候才可使用
+2016-04-07
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:layout_width="match_parent"
+    android:background="@color/util_title_bar_background"
+    android:layout_height="wrap_content">
+    <!--标题栏-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/util_title_bar_height"
+        android:minHeight="@dimen/util_title_bar_min_height"
+        android:background="@color/util_title_bar_background"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:navigationIcon="@drawable/util_bt_back">
+        <!--标题-->
+        <TextView
+            android:id="@+id/title_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/util_white"
+            android:textSize="@dimen/util_font_size_default"
+            tools:text="@string/util_default"/>
+    </android.support.v7.widget.Toolbar>
+</FrameLayout>

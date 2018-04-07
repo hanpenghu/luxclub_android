@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="@color/setting_item_background">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_background"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/view1"
+        android:background="@color/line_divider"/>
+
+    <RelativeLayout
+        android:id="@+id/rll"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/view2">
+
+        <TextView
+            android:id="@+id/txt_site_name"
+            style="@style/font_small_xx_white_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_space"
+            android:drawablePadding="@dimen/layout_space"
+            android:drawableRight="@drawable/setting_view_arrow"
+            android:gravity="clip_vertical"
+            android:text="@string/util_default"/>
+
+        <TextView
+            android:id="@+id/txt_order_state"
+            style="@style/font_small_xx_yellow_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_space"
+            android:gravity="center_vertical"
+            android:text="@string/util_default"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/rll"
+        android:layout_marginLeft="@dimen/layout_space"
+        android:background="@color/line_divider"/>
+
+    <LinearLayout
+        android:layout_below="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_site_image_url"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/layout_space"
+            android:layout_marginLeft="@dimen/layout_space"
+            android:layout_marginTop="@dimen/layout_space"
+            android:adjustViewBounds="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/img_site_image_url"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_remarks"
+                style="@style/font_small_xx_gray_deep_text"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_time_order"/>
+
+            <TextView
+                android:id="@+id/txt_create_date"
+                style="@style/font_small_xx_gray_deep_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/util_default"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/view3"
+        android:layout_marginTop="104dp"
+        android:background="@color/line_divider"/>
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black_transparent">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white_transparent"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="-35dp"
+        android:background="@drawable/shape_view_back_circle_white"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtConfirmTitle"
+            style="@style/font_small_xx_black_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:text="@string/util_gesture_password_forget"/>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/txtConfirmTitle"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    style="@style/font_small_xx_gray_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_view_left_circle"
+                    android:text="@string/txt_cancel"
+                    android:textColor="@drawable/selector_view_left_circle"/>
+
+                <Button
+                    android:id="@+id/btnOk"
+                    style="@style/font_small_xx_gray_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/shape_view_right_selector_circle"
+                    android:text="@string/txt_ok"
+                    android:textColor="@drawable/shape_view_right_selector_circle"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_gravity="left|right|top"
+                android:background="@color/gray"/>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>

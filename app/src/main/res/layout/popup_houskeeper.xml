@@ -1,0 +1,61 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rly_recharge_discount"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/app_background"
+    android:gravity="center_horizontal">
+
+    <TextView
+        style="@style/font_small_xxx_white_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="私人管家"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/icon_housekeeper" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/line_divider" />
+
+    <TextView
+        android:id="@+id/txt_content"
+        style="@style/font_small_xx_white_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginTop="10dp"
+        tools:text="haha" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        style="@style/font_small_xx_white_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginBottom="30dp"
+        android:text="吉祥荟\n吉祥安康，至尊荟萃" />
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:padding="20dp"
+        android:src="@drawable/icon_close"
+        tools:ignore="ContentDescription" />
+</LinearLayout>

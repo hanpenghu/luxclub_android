@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme NoActionBar. -->
+    <style name="AppThemeNoTitle" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/title_background</item>
+        <item name="colorPrimaryDark">@color/title_background</item>
+        <item name="colorAccent">@color/yellow_lux</item>
+        <!--APP背景颜色-->
+        <item name="android:colorBackground">@color/app_background</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- toolbar菜单样式 -->
+    <style name="MyToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@color/yellow_lux</item>
+        <item name="android:colorBackground">@color/gray</item>
+        <item name="actionMenuTextAppearance">@style/ToolbarMenuTextSize</item>
+        <item name="selectableItemBackground">@drawable/selector_toolbar_menu_btn</item>
+    </style>
+
+    <!-- toolbar弹出菜单样式 -->
+    <style name="MyToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@color/gray_deep</item>
+    </style>
+
+    <!-- toolbar菜单文字尺寸 -->
+    <style name="ToolbarMenuTextSize" parent="@style/TextAppearance.AppCompat.Menu">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--TableLayout指示器文字-->
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

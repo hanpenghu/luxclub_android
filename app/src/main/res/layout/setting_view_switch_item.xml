@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_view_switch_item_container"
+    style="@style/SettingViewContainer" >
+
+    <ImageView
+        android:id="@+id/setting_view_switch_item_icon"
+        style="@style/SettingViewIcon" />
+
+    <TextView
+        android:id="@+id/setting_view_switch_item_title"
+        style="@style/SettingViewTitleH" />
+
+    <!--<com.fdjf.luxclub.controls.recyclerview_item_joy.SwitchButton-->
+        <!--android:id="@+id/setting_view_switch_item_switch"-->
+        <!--style="@style/SettingViewSwitch" />-->
+
+    <com.hsbank.luxclub.mywidget.setting_item.item.SwitchView
+        android:id="@+id/setting_view_switch_item_switch"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/setting_view_lr_padding"/>
+
+</LinearLayout>
+

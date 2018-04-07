@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_common" />
+
+        <TextView
+            style="@style/font_small_x_gray_deep_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_ktv_detail"
+            android:background="@color/app_background"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_ktv_detail"
+            android:text="@string/txt_subscribe_shop" />
+
+        <TextView
+            android:id="@+id/txt_site_name"
+            style="@style/font_small_x_yellow_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_ktv_detail"
+            android:background="@color/setting_item_background"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_ktv_detail"
+            tools:text="@string/txt_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_ktv_detail"
+            android:layout_marginTop="@dimen/space_setting_item"
+            android:background="@color/setting_item_background"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_ktv_detail"
+            android:paddingRight="@dimen/margin_ktv_detail">
+
+            <TextView
+                style="@style/font_small_x_white_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/txt_call_num" />
+
+            <EditText
+                android:id="@+id/edt_contact_num"
+                style="@style/font_small_x_white_text"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_ktv_detail"
+                android:layout_marginLeft="@dimen/margin_ktv_detail"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:maxLength="11"
+                tools:text="@string/txt_default" />
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_delete_gray"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="@dimen/space_setting_item"
+            android:background="@color/setting_item_background"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_ktv_detail"
+            android:paddingRight="@dimen/margin_ktv_detail">
+
+            <TextView
+                style="@style/font_small_x_white_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_participation_num" />
+
+            <EditText
+                android:id="@+id/edt_peop_num"
+                style="@style/font_small_x_white_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_ktv_detail"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="2"
+                tools:text="@string/txt_default" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/font_small_x_gray_deep_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_ktv_detail"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_ktv_detail"
+            android:text="@string/txt_arrive_time" />
+
+        <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+            android:id="@+id/setitem_subscribe_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_view_item_height"
+            android:background="@color/setting_item_background"
+            android:paddingLeft="15dp"
+            app:_title="@string/txt_week_today"
+            app:subTitle="@string/txt_current_time"
+            app:subTitleColor="@color/gray_deep"
+            app:titleColor="@color/white" />
+
+        <TextView
+            style="@style/font_small_x_gray_deep_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_ktv_detail"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="场景(选填)" />
+
+        <LinearLayout
+            android:id="@+id/lly_site_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/setting_item_background">
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:button="@null"
+                android:background="@drawable/selector_radio_peop_num"
+                android:text="商业宴请" />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:button="@null"
+                android:background="@drawable/selector_radio_peop_num"
+                android:text="私人聚会" />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:button="@null"
+                android:background="@drawable/selector_radio_peop_num"
+                android:text="家庭聚会" />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:button="@null"
+                android:background="@drawable/selector_radio_peop_num"
+                android:text="生日派对" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/font_small_x_gray_deep_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:text="备注" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/title_background"
+            android:layout_margin="5dp">
+            <EditText
+                android:id="@+id/edt_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:maxLength="100"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_comfirm"
+        style="@style/font_small_xx_black_text"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="bottom"
+        android:background="@color/yellow_lux"
+        android:gravity="center"
+        android:text="@string/txt_ok" />
+</FrameLayout>

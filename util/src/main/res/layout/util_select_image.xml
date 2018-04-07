@@ -1,0 +1,55 @@
+<!--
+选择图片：拍照、从手机相册中选择
+2016-04-29
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/util_black_translucent">
+    <LinearLayout
+        android:id="@+id/viewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/util_default_margin"
+        android:layout_marginLeft="@dimen/util_default_margin"
+        android:layout_marginRight="@dimen/util_default_margin"
+        android:background="@color/util_transparent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <!--拍照-->
+            <Button
+                android:id="@+id/bt_take_photo"
+                style="@style/util_button_white_default"
+                android:layout_width="fill_parent"
+                android:background="@drawable/util_shape_bg_radius_5_white"
+                android:text="@string/util_bt_take_photo" />
+            <!--分割线-->
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@null"
+                android:contentDescription="@string/util_image_view" />
+            <!--从手机相册中选择-->
+            <Button
+                android:id="@+id/bt_select_image"
+                style="@style/util_button_white_default"
+                android:layout_width="fill_parent"
+                android:background="@drawable/util_shape_bg_radius_5_white"
+                android:text="@string/util_bt_select_image" />
+        </LinearLayout>
+        <!--取消-->
+        <Button
+            android:id="@+id/bt_cancel"
+            style="@style/util_button_white_default"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="@dimen/util_default_margin"
+            android:background="@drawable/util_shape_bg_radius_5_white"
+            android:text="@string/util_bt_cancel" />
+    </LinearLayout>
+
+</FrameLayout>

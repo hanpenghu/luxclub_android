@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/profit_View"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/img_coin_purse" />
+
+        <TextView
+            style="@style/font_small_xx_white_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_wallet_last_profit"
+            android:id="@+id/textView"
+            android:layout_alignTop="@+id/cardView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            style="@style/font_big_xx_white_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_default"
+            android:id="@+id/txt_wallet_last_profit"
+            android:layout_marginTop="@dimen/layout_space"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            style="@style/font_small_x_gray_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_total_amount"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/txt_wallet_last_profit"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            style="@style/font_middle_x_white_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_default"
+            android:id="@+id/txt_wallet_balance"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_divider" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:background="@color/setting_item_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.49">
+
+                <TextView
+                    android:id="@+id/txt_annualized_rates"
+                    style="@style/font_middle_xx_yellow_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/txt_default"/>
+
+                <TextView
+                    style="@style/font_small_xx_gray_deep_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/txt_annualized_rates" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/line_divider"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"/>
+            <LinearLayout
+                android:id="@+id/wallet_profit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.49">
+
+                <TextView
+                    android:id="@+id/txt_wallet_profit"
+                    style="@style/font_middle_xx_yellow_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/txt_default"/>
+
+                <TextView
+                    style="@style/font_small_xx_gray_deep_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/txt_wallet_profit" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/annualized_rates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="-50dp"
+            android:padding="5dp"
+            android:src="@drawable/icon_info"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_divider" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20dp"
+        android:background="@color/line_divider" />
+
+    <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+        android:id="@+id/setitem_consumption"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_view_item_height"
+        app:_title="@string/txt_consumption"
+        app:drawable="@drawable/icon_setting_consumption"
+        app:titleColor="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_divider" />
+
+    <com.hsbank.luxclub.mywidget.setting_item.item.BasicItemViewH
+        android:id="@+id/setitem_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_view_item_height"
+        app:_title="@string/txt_recharge"
+        app:drawable="@drawable/icon_setting_recharge"
+        app:titleColor="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_divider" />
+</LinearLayout>

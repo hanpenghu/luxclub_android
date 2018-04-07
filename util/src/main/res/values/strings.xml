@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">App名称</string>
+    <string name="app_flag">app_flag</string>
+    <string name="action_settings">settings</string>
+</resources>

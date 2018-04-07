@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activityBase"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue_top"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_common"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtGesture"
+            style="@style/font_small_xx_gray_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:text="@string/txt_input_gesture_password"/>
+
+        <com.hsbank.luxclub.mywidget.lock_view.LockPatternView
+            android:id="@+id/lockview"
+            android:layout_width="290dp"
+            android:layout_height="290dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"/>
+
+        <TextView
+            android:id="@+id/forgetPassword"
+            style="@style/font_small_xx_yellow_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:gravity="center_horizontal"
+            android:text="@string/txt_forget_gesture"/>
+    </LinearLayout>
+</LinearLayout>

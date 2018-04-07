@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SettingView -->
+    <dimen name="setting_view_item_height">55dp</dimen>
+    <dimen name="setting_view_lr_padding">14dp</dimen>
+    <dimen name="setting_view_tb_padding">5dp</dimen>
+    <dimen name="setting_view_title_size">16sp</dimen>
+    <dimen name="setting_view_subtitle_size">14sp</dimen>
+    <dimen name="switch_button_width">50dp</dimen>
+    <dimen name="switch_button_height">30dp</dimen>
+
+    <!--pickerview IOS style-->
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">20sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">21sp</dimen>
+    <!-- 选项文字大小 需要配合 bools.xml 的 pickerview_customTextSize 为 true 才有效果-->
+    <dimen name="pickerview_textsize">20sp</dimen>
+
+</resources>

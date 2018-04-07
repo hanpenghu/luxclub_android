@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+基于V7包中的ToolBar实现的背景透明的标题栏
+只有当前类继承AppcompatActivity时候才可使用
+2016-04-07
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:layout_height="wrap_content">
+    <!--背景透明的标题栏-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/util_title_bar_min_height"
+        android:background="@android:color/transparent"
+        android:fitsSystemWindows="true"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:navigationIcon="@drawable/util_bt_back">
+        <!--标题-->
+        <TextView
+            android:id="@+id/title_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/util_white"
+            android:textSize="@dimen/util_font_size_default"
+            android:text="@string/util_default"/>
+    </android.support.v7.widget.Toolbar>
+</FrameLayout>
+
+

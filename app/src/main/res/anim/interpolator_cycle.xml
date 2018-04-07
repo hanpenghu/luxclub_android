@@ -1,0 +1,4 @@
+<!-- 手势密码动画连续多次运行，这里是5次 -->
+<cycleInterpolator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:cycles="5"/>

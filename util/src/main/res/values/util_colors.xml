@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--App背景色-->
+    <color name="util_app_background">#FFF4F4F4</color>
+    <!--主菜单条背景色-->
+    <color name="util_main_menu_bar_background">#FFF7F7F7</color>
+    <!--主菜单：背景色-->
+    <color name="util_main_menu_normal">#FF7E7E7E</color>
+    <!--主菜单：选中时的背景色-->
+    <color name="util_main_menu_selected">#FFD5AB17</color>
+    <!--标题栏背景色-->
+    <color name="util_title_bar_background">#FF1D212D</color>
+    <!--分隔线颜色-->
+    <color name="util_line_divider">#FFD0CFCF</color>
+    <!--输入框占位文本的颜色-->
+    <color name="util_place_holder">#FFC3C3C3</color>
+    <!--提示文本的颜色-->
+    <color name="util_text_hint">#FFC3C3C3</color>
+    <!--红色-->
+    <color name="util_red">#FFEA3836</color>
+    <!--浅红色-->
+    <color name="util_red_light">#66EA3836</color>
+    <!--粉色-->
+    <color name="util_pink">#FFF1798F</color>
+    <!--蓝色-->
+    <color name="util_blue">#FF65C0E7</color>
+    <!--白色-->
+    <color name="util_white">#FFFFFFFF</color>
+    <!--半透明白色-->
+    <color name="util_white_translucent">#80FFFFFF</color>
+    <!--黄色-->
+    <color name="util_yellow">#FFD5AB17</color>
+    <!--浅黄色-->
+    <color name="util_yellow_light">#66D5AB17</color>
+    <!--黑色-->
+    <color name="util_black">#FF333333</color>
+    <!--浅黑色-->
+    <color name="util_black_light">#66333333</color>
+    <!--半透明黑色-->
+    <color name="util_black_translucent">#66000000</color>
+    <!--灰色-->
+    <color name="util_gray">#FF999999</color>
+    <!--浅灰色-->
+    <color name="util_gray_light">#66999999</color>
+    <!--透明色-->
+    <color name="util_transparent">#00000000</color>
+    <!--自定义对话框_按钮_颜色：danger级别-->
+    <color name="util_custom_dialog_button_danger">#ffd9534f</color>
+    <color name="util_custom_dialog_button_danger_edge">#ffd43f3a</color>
+    <color name="util_custom_dialog_button_danger_pressed">#ffd2322d</color>
+    <color name="util_custom_dialog_button_danger_pressed_edge">#ffac2925</color>
+    <color name="util_custom_dialog_button_danger_disabled">#a5d9534f</color>
+    <color name="util_custom_dialog_button_danger_disabled_edge">#a5d43f3a</color>
+    <!--自定义对话框_按钮_颜色：info级别-->
+    <color name="util_custom_dialog_button_info">#ff5bc0de</color>
+    <color name="util_custom_dialog_button_info_edge">#ff46b8da</color>
+    <color name="util_custom_dialog_button_info_pressed">#ff39b3d7</color>
+    <color name="util_custom_dialog_button_info_pressed_edge">#ff269abc</color>
+    <color name="util_custom_dialog_button_info_disabled">#a55bc0de</color>
+    <color name="util_custom_dialog_button_info_disabled_edge">#a546b8da</color>
+</resources>

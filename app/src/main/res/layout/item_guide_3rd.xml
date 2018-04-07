@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img_guide_03"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_bind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape_rect_stroke_cor8_yellow"
+            android:paddingBottom="10dp"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:paddingTop="10dp"
+            android:text="@string/txt_bind_card"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/font_small_xxx" />
+
+        <TextView
+            android:id="@+id/txt_jump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:paddingTop="5dp"
+            android:text="@string/txt_jump"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/font_small_xxx" />
+    </LinearLayout>
+</FrameLayout>

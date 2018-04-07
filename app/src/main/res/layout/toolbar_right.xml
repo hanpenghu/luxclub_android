@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fly_toolbar"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:layout_width="match_parent"
+    android:background="@color/title_background"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:minHeight="@dimen/title_height"
+        android:background="@color/title_background"
+        android:elevation="4dp"
+        android:theme="@style/MyToolbarTheme"
+        app:popupTheme="@style/MyToolbarPopupTheme"
+        app:navigationIcon="@drawable/icon_arrow_title">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_middle"
+            tools:text="@string/txt_default"/>
+
+        <TextView
+            android:id="@+id/txt_menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="@dimen/layout_space"
+            android:drawablePadding="5dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/font_small_xxx"
+            android:textColor="@color/white"
+            tools:text="@string/txt_message" />
+    </android.support.v7.widget.Toolbar>
+
+</FrameLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/font_small_x_gray_deep_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_ktv_detail"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_ktv_detail"
+        android:background="@color/app_background"
+        android:text="@string/txt_order_store_name" />
+
+
+    <TextView
+            android:id="@+id/txt_name"
+            style="@style/font_small_x_yellow_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_ktv_detail"
+            android:background="@color/setting_item_background"
+            android:paddingLeft="@dimen/margin_ktv_detail"
+            android:gravity="center_vertical"
+            tools:text="@string/txt_default" />
+
+    <LinearLayout
+        android:id="@+id/lly_vip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:orientation="vertical">
+        <TextView
+            style="@style/font_small_x_gray_deep_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_ktv_detail"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_ktv_detail"
+            android:background="@color/app_background"
+            android:text="@string/txt_phone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_phone_num"
+                style="@style/font_small_x_white_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_ktv_detail"
+                android:background="@color/setting_item_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin_ktv_detail"
+                tools:text="@string/txt_default" />
+
+            <ImageButton
+                android:id="@+id/imgbt_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/icon_phone"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/font_small_x_gray_deep_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_ktv_detail"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_ktv_detail"
+        android:background="@color/app_background"
+        android:text="@string/txt_address" />
+
+    <TextView
+        android:id="@+id/txt_address"
+        style="@style/font_small_x_white_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_ktv_detail"
+        android:background="@color/setting_item_background"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_ktv_detail"
+        tools:text="@string/txt_default" />
+
+        <TextView
+            style="@style/font_small_x_gray_deep_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_ktv_detail"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_ktv_detail"
+            android:text="@string/intro" />
+
+    <FrameLayout
+        android:id="@+id/fly_web_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+            style="@style/font_small_x_gray_deep_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_ktv_detail"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_ktv_detail"
+            android:text="@string/shop_albums" />
+
+    <com.hsbank.luxclub.mywidget.MeansureGridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:numColumns="2"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:stretchMode="columnWidth"/>
+    </LinearLayout>

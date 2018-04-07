@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black_transparent">
+
+    <LinearLayout
+        android:id="@+id/viewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white_transparent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_image_take"
+                style="@style/font_small_xx_yellow_text"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:background="@color/white_transparent"
+                android:text="@string/txt_manager_photograph" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/line_divider"/>
+
+            <Button
+                android:id="@+id/btn_album_change"
+                style="@style/font_small_xx_yellow_text"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:background="@color/white_transparent"
+                android:text="@string/txt_album_change" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/font_small_xx_black_text"
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="@dimen/layout_space"
+            android:background="@color/white"
+            android:text="@string/txt_cancel" />
+    </LinearLayout>
+
+</FrameLayout>
